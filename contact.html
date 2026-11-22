@@ -1,141 +1,313 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact Explore India to share your travel questions, feedback and suggestions.">
+
     <title>Contact Us | Explore India</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
+    <!-- HEADER -->
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Explore<span>India.</span></a>
 
-            <ul class="nav-links">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Explore<span>India.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="destinations.html">Destinations</a></li>
+
                 <li><a href="experiences.html">Experiences</a></li>
+
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
+
+                <li><a href="contact.html" class="active">Contact</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
+
+    <!-- MAIN CONTENT -->
     <main>
-        <section class="page-banner">
-            <p class="section-label">LET'S CONNECT</p>
-            <h1>Plan Your Next Journey</h1>
-            <p>Have a question or need travel inspiration? We'd love to hear from you.</p>
-        </section>
 
-        <section class="contact-section">
+        <!-- CONTACT BANNER -->
+        <section class="contact-banner">
 
-            <div class="contact-info">
-                <p class="section-label">GET IN TOUCH</p>
-                <h2>Let's Talk Travel</h2>
+            <div class="contact-overlay"></div>
 
-                <p class="contact-description">
-                    Every great journey begins with an idea.
-                    Tell us what inspires you, and start discovering
-                    the incredible beauty of India.
+            <div class="contact-banner-content">
+
+                <p class="section-label">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+                <h1>Let's Start a Conversation</h1>
+
+                <p>
+                    Have a question, suggestion or travel story?
+                    Get in touch with us.
                 </p>
 
-                <div class="contact-detail">
-                    <span class="detail-icon">✉</span>
-                    <div>
-                        <h3>Email</h3>
-                        <p>hello@exploreindia.example</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <span class="detail-icon">⌖</span>
-                    <div>
-                        <h3>Explore</h3>
-                        <p>Discover destinations across India</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <span class="detail-icon">♡</span>
-                    <div>
-                        <h3>Our Mission</h3>
-                        <p>Inspire people to experience India's diversity.</p>
-                    </div>
-                </div>
             </div>
 
+        </section>
+
+
+        <!-- CONTACT INTRODUCTION -->
+        <section class="contact-intro section-padding">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Whether you need information about a destination
+                or simply want to share your experience,
+                we'd be happy to hear from you.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding">
+
+            <!-- CONTACT INFORMATION -->
+            <div class="contact-information">
+
+                <p class="section-label">CONTACT INFORMATION</p>
+
+                <h2>We Are Here to Help</h2>
+
+                <p>
+                    Feel free to reach out to us.
+                    Your questions and suggestions are always welcome.
+                </p>
+
+
+                <div class="contact-detail">
+
+                    <span class="contact-icon">✉</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@exploreindia.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <span class="contact-icon">☎</span>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <span class="contact-icon">⌖</span>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>New Delhi, India</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-note">
+
+                    <h3>Explore More. Experience More.</h3>
+
+                    <p>
+                        Every great journey begins with a simple conversation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
             <div class="contact-form-container">
+
                 <h2>Send Us a Message</h2>
-                <p>Fill in the details below.</p>
 
-                <form action="#" method="post">
+                <p>Fill in the details below and we'll be happy to hear from you.</p>
 
+
+                <form id="contactForm">
+
+                    <!-- NAME -->
                     <div class="form-group">
+
                         <label for="name">Full Name</label>
+
                         <input
                             type="text"
                             id="name"
                             name="name"
                             placeholder="Enter your full name"
+                            minlength="2"
+                            maxlength="60"
                             required
                         >
+
                     </div>
 
+
+                    <!-- EMAIL -->
                     <div class="form-group">
+
                         <label for="email">Email Address</label>
+
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Enter your email"
+                            placeholder="Enter your email address"
                             required
                         >
+
                     </div>
 
+
+                    <!-- SUBJECT -->
                     <div class="form-group">
-                        <label for="destination">Destination of Interest</label>
-                        <select id="destination" name="destination" required>
-                            <option value="">Choose a destination</option>
-                            <option value="Rajasthan">Rajasthan</option>
-                            <option value="Kerala">Kerala</option>
-                            <option value="Himachal Pradesh">Himachal Pradesh</option>
-                            <option value="Goa">Goa</option>
-                            <option value="Other">Other</option>
+
+                        <label for="subject">Subject</label>
+
+                        <select id="subject" name="subject" required>
+
+                            <option value="">Select a subject</option>
+
+                            <option value="Destination Information">
+                                Destination Information
+                            </option>
+
+                            <option value="Travel Suggestions">
+                                Travel Suggestions
+                            </option>
+
+                            <option value="Feedback">
+                                Feedback
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
                         </select>
+
                     </div>
 
+
+                    <!-- MESSAGE -->
                     <div class="form-group">
+
                         <label for="message">Your Message</label>
+
                         <textarea
                             id="message"
                             name="message"
                             rows="5"
-                            placeholder="Tell us about your travel plans..."
+                            placeholder="Write your message here..."
+                            minlength="10"
+                            maxlength="1000"
                             required
                         ></textarea>
+
                     </div>
 
-                    <button type="submit" class="btn submit-btn">
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn btn-primary form-submit">
+
                         Send Message →
+
                     </button>
+
+
+                    <!-- SUCCESS MESSAGE -->
+                    <p id="formMessage" class="form-message"
+                        role="status" aria-live="polite"></p>
 
                 </form>
 
-                <p class="form-note">
-                    Student project demonstration: messages are not sent to a server.
-                </p>
             </div>
 
         </section>
+
+
+        <!-- CLOSING SECTION -->
+        <section class="contact-quote">
+
+            <p class="section-label">YOUR JOURNEY STARTS HERE</p>
+
+            <h2>Discover India. Create Memories. Share Stories.</h2>
+
+            <a href="destinations.html" class="btn btn-primary">
+                Explore Destinations →
+            </a>
+
+        </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <a href="index.html" class="logo">Explore<span>India.</span></a>
-        <p>Discover India. Experience the extraordinary.</p>
-        <p>© 2026 Explore India. Created for an HTML & CSS project.</p>
+
+        <a href="index.html" class="logo">
+            Explore<span>India.</span>
+        </a>
+
+        <p>
+            Discover India. Experience the extraordinary.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © <span id="currentYear"></span> Explore India.
+            All Rights Reserved.
+        </p>
+
     </footer>
 
 </body>
