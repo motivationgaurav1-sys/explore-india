@@ -843,3 +843,176 @@ img {
     }
 
 }
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+/* Contact section */
+
+.contact-section {
+    padding: 65px 8%;
+    background-color: #f8f9fa;
+}
+
+
+/* Main container */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: start;
+}
+
+
+/* Contact information */
+
+.contact-info {
+    background-color: #263238;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.contact-info > p {
+    color: #dddddd;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* Email and location details */
+
+.contact-detail {
+    margin-bottom: 22px;
+}
+
+.contact-detail h3 {
+    color: #f39c12;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: #eeeeee;
+}
+
+
+/* Contact form */
+
+.contact-form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+    font-size: 27px;
+    color: #263238;
+    margin-bottom: 25px;
+}
+
+
+/* Form groups */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+
+/* Input fields and textarea */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+/* Focus effect */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e67e22;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+.contact-form .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* Form confirmation message */
+
+#formMessage {
+    margin-top: 18px;
+    color: #218838;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 40px 6%;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 23px;
+    }
+
+}
