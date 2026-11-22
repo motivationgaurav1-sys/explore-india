@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,303 +6,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Explore beautiful photographs of India's monuments, landscapes, beaches, culture and heritage.">
-
     <title>Gallery | Explore India</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
+    <!-- NAVBAR -->
 
-        <nav class="navbar">
-
-            <a href="index.html" class="logo">
-                Explore<span>India.</span>
-            </a>
-
-            <button class="menu-toggle" id="menuToggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="navLinks">
-                ☰
-            </button>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-        <!-- GALLERY BANNER -->
-        <section class="gallery-banner">
-
-            <div class="gallery-overlay"></div>
-
-            <div class="gallery-banner-content">
-
-                <p class="section-label">A JOURNEY THROUGH LENS</p>
-
-                <h1>India Through Our Lens</h1>
-
-                <p>
-                    Explore the beauty, colours and unforgettable
-                    moments of incredible India.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- GALLERY INTRODUCTION -->
-        <section class="gallery-intro section-padding">
-
-            <p class="section-label">CAPTURE THE BEAUTY</p>
-
-            <h2>Moments Worth Remembering</h2>
-
-            <p>
-                From breathtaking landscapes to magnificent
-                monuments, discover India's beauty through
-                these photographs.
-            </p>
-
-        </section>
-
-
-        <!-- IMAGE GALLERY -->
-        <section class="photo-gallery section-padding">
-
-            <div class="section-heading">
-
-                <p class="section-label">EXPLORE OUR COLLECTION</p>
-
-                <h2>Beautiful India</h2>
-
-                <p>
-                    Click on any photograph to view it in a larger size.
-                </p>
-
-            </div>
-
-
-            <div class="gallery-grid" id="galleryGrid">
-
-                <!-- IMAGE 1 -->
-                <figure class="gallery-item gallery-large">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85"
-                        alt="Taj Mahal in Agra"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Taj Mahal</h3>
-                        <p>Agra, Uttar Pradesh</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 2 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=85"
-                        alt="Traditional architecture of Rajasthan"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Royal Rajasthan</h3>
-                        <p>Rajasthan</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 3 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85"
-                        alt="Green landscapes of Kerala"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Green Kerala</h3>
-                        <p>Kerala</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 4 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85"
-                        alt="Beautiful tropical beach"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Coastal Beauty</h3>
-                        <p>Goa</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 5 -->
-                <figure class="gallery-item gallery-large">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=85"
-                        alt="Beautiful Himalayan mountains"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Mountain Escape</h3>
-                        <p>Himachal Pradesh</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 6 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=85"
-                        alt="Scenic mountain landscape"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Nature's Beauty</h3>
-                        <p>Darjeeling</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 7 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=900&q=85"
-                        alt="Mumbai city landscape"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>City Life</h3>
-                        <p>Mumbai</p>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- IMAGE 8 -->
-                <figure class="gallery-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=900&q=85"
-                        alt="Traditional Indian architecture"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <h3>Indian Heritage</h3>
-                        <p>Incredible India</p>
-                    </figcaption>
-
-                </figure>
-
-            </div>
-
-        </section>
-
-
-        <!-- IMAGE LIGHTBOX -->
-        <div class="lightbox" id="lightbox"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Enlarged gallery image"
-            aria-hidden="true"
-            hidden>
-
-            <button class="lightbox-close" id="lightboxClose"
-                aria-label="Close image viewer">
-                &times;
-            </button>
-
-            <img src="" alt="" id="lightboxImage">
-
-            <p id="lightboxCaption"></p>
-
-        </div>
-
-
-        <!-- CLOSING SECTION -->
-        <section class="gallery-quote">
-
-            <p class="section-label">INCREDIBLE INDIA</p>
-
-            <h2>Some Memories Deserve to Last Forever.</h2>
-
-            <a href="destinations.html" class="btn btn-primary">
-                Explore Destinations →
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
+    <header class="navbar">
 
         <a href="index.html" class="logo">
             Explore<span>India.</span>
         </a>
 
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <p class="section-label">A VISUAL JOURNEY</p>
+
+        <h2>Explore India Through Pictures</h2>
+
         <p>
-            Discover India. Experience the extraordinary.
+            Discover the beauty of India through photographs
+            of its famous landmarks, landscapes and culture.
         </p>
+
+    </section>
+
+
+    <!-- IMAGE GALLERY -->
+
+    <section class="gallery-section">
+
+        <h2 class="section-heading">Our Photo Gallery</h2>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523"
+                     alt="Taj Mahal in Agra">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33"
+                     alt="Jaipur architecture">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"
+                     alt="Mountains in Manali">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+                     alt="Kerala backwaters">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+                     alt="Goa beach">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f"
+                     alt="Mumbai city">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
 
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="destinations.html">Destinations</a>
             <a href="experiences.html">Experiences</a>
+            <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
 
         <p class="copyright">
-            © <span id="currentYear"></span> Explore India.
-            All Rights Reserved.
+            © <span id="currentYear"></span> Explore India. All rights reserved.
         </p>
 
     </footer>
 
+
+    <!-- INTERNAL JAVASCRIPT -->
+
+    <script>
+
+        // MOBILE NAVIGATION
+
+        const menuToggle = document.getElementById("menuToggle");
+
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function() {
+
+            navLinks.classList.toggle("show");
+
+        });
+
+
+        // CURRENT YEAR
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+
+        // GALLERY IMAGE CLICK
+
+        const galleryItems = document.querySelectorAll(".gallery-item img");
+
+        galleryItems.forEach(function(image) {
+
+            image.addEventListener("click", function() {
+
+                window.open(image.src, "_blank");
+
+            });
+
+        });
+
+    </script>
+
 </body>
+
 </html>
